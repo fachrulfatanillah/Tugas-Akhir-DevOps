@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name dev.fachrurfatanillah.my.id;
+
+    root /home/klardia/github/Tugas-Akhir-DevOps/dist; 
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
